@@ -1,3 +1,6 @@
+import sys
+sys.path.append('')
+
 import configparser
 from script.helper.helper2 import *
 import logging
