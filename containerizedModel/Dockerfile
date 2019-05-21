@@ -1,4 +1,4 @@
-FROM frolvlad/alpine-python-machinelearning
+FROM fnndsc/ubuntu-python3
 MAINTAINER Hilton Pintor
 
 #set envionment variables
@@ -15,21 +15,10 @@ WORKDIR /app
 COPY requirements.txt .
 
 #install dependencies
-# RUN apk add --update --no-cache g++ gcc libxslt-dev
 RUN pip install -r requirements.txt
-# RUN apk add --update --no-cache --virtual .build-deps \
-# 		gcc \
-#         g++ \
-#         python3-dev \
-#         python-libxml \
-#         libxml2 \
-#         libxml2-dev && \
-#     apk add libxslt-dev && \
-#     pip install --no-cache-dir -r requirements.txt && \
-#     apk del .build-deps
 
 # copy code itself from context to image
 COPY . .
 
-# run from working directory, and separate args in the json syntax
-# CMD ["python", "./manage.py", "runserver", "0.0.0.0:8000"]
+# run from working directory, and separate args in the json syntax	
+ENTRYPOINT sh
