@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../..')
+
 import configparser
 import logging
 import pandas
@@ -8,7 +11,7 @@ from sqlite3 import Error
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.svm import LinearSVC
 from sklearn.preprocessing import MultiLabelBinarizer
-from sklearn.cross_validation import cross_val_predict
+from sklearn.model_selection import cross_val_predict
 from sklearn.metrics import classification_report
 from sklearn.model_selection import cross_val_score
 from script.helper.heuristic2 import *
@@ -16,7 +19,7 @@ from script.helper.balancer import *
 import time
 import operator
 from sklearn.externals import joblib
-from win32com.test.testall import output_checked_programs
+# from win32com.test.testall import output_checked_programs
 
 def find_unique(csv_input_line):
     l = list(set(csv_input_line.split(',')))

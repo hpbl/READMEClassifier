@@ -1,0 +1,35 @@
+INFO:root:Searching for candidate headings in file hpbl.haskellKoans.md
+INFO:root:Searching for candidate headings in file .DS_Store
+INFO:root:Saving section overviews to database
+INFO:root:Section headings loaded into database
+INFO:root:Fetching list of distinct filenames
+INFO:root:Cleaning existing data
+INFO:root:Processing ../../input/clf_target_readmes/hpbl.haskellKoans.md
+INFO:root:Abstraction of README file into temporary directory has been completed
+INFO:root:Fetching information of section to extract and load
+INFO:root:Searching for abstracted heading: # HaskellKoans
+INFO:root:Reading ../../temp/target_abstracted_markdown/hpbl.haskellKoans.md
+INFO:root:Found the heading for # HaskellKoans
+INFO:root:Searching for # HaskellKoans. Encountered new heading in document: ## The project
+INFO:root:Searching for abstracted heading: ## The project
+INFO:root:Found the heading for ## The project
+INFO:root:Searching for ## The project. Encountered new heading in document: ## To Do
+INFO:root:Searching for abstracted heading: ## To Do
+INFO:root:Found the heading for ## To Do
+INFO:root:Searching for ## To Do. Encountered new heading in document: ## Setup
+INFO:root:Searching for abstracted heading: ## Setup
+INFO:root:Found the heading for ## Setup
+INFO:root:Searching for ## Setup. Encountered new heading in document: ### Running locally
+INFO:root:Searching for abstracted heading: ### Running locally
+INFO:root:Found the heading for ### Running locally
+INFO:root:Searching for ### Running locally. Encountered new heading in document: ### Running on Docker
+INFO:root:Searching for abstracted heading: ### Running on Docker
+INFO:root:Found the heading for ### Running on Docker
+INFO:root:Searching for ### Running on Docker. Encountered new heading in document: ## Continuous Deployment
+INFO:root:Searching for abstracted heading: ## Continuous Deployment
+INFO:root:Found the heading for ## Continuous Deployment
+INFO:root:Searching for ## Continuous Deployment. Encountered new heading in document: ## Original Authors
+INFO:root:Searching for abstracted heading: ## Original Authors
+INFO:root:Found the heading for ## Original Authors
+INFO:root:Loading of section contents has been completed
+INFO:root:Operation completed

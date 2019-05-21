@@ -1,3 +1,6 @@
+import sys
+sys.path.append('../..')
+
 import configparser
 import logging
 import sqlite3
