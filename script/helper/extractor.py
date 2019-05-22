@@ -381,6 +381,7 @@ def delete_existing_section_content_data(temp_abstracted_markdown_file_dir, db_f
 
 def retrieve_readme_filenames_from_db(db_filename, section_overview_table_name):
     conn = sqlite3.connect(db_filename)
+    print(f"db_filename: {db_filename}")
     try:
         c = conn.cursor()
         logging.info("Fetching list of distinct filenames")
@@ -392,10 +393,17 @@ def retrieve_readme_filenames_from_db(db_filename, section_overview_table_name):
         
         filenames = result.fetchall()
         conn.commit()
+        print("NO ERRORS")
     except Error as e:
+        print("<Error 1>")
+        print(e)
+        print("</Error 1>")
         logging.exception(e)
     except Exception as e:
         logging.exception(e)
+        print("<Error 2>")
+        print(e)
+        print("</Error 2>")
     finally:
         conn.close()  
     return filenames 

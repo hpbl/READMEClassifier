@@ -16,6 +16,7 @@ COPY requirements.txt .
 
 #install dependencies
 RUN pip install -r requirements.txt
+RUN python3 -c "import nltk; nltk.download('words')"
 
 # copy code itself from context to image
 COPY . .
