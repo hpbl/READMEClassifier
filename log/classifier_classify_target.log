@@ -1,4 +1,4 @@
 INFO:root:tfidf matrix shape: 
 INFO:root:(8, 17803)
 INFO:root:Deriving features
-INFO:root:Processing completed in 0.8195481300354004
+INFO:root:Processing completed in 1.5304279327392578

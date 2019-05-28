@@ -26,11 +26,12 @@ def find_unique(csv_input_line):
     l.sort()
     return l
 
-if __name__ == '__main__':
+def main():
     start = time.time()
     
     config = configparser.ConfigParser()
-    config.read('../../config/config.cfg')
+    # config.read('../../config/config.cfg')
+    config.read('config/config.cfg')
     db_filename = config['DEFAULT']['db_filename']
     rng_seed = int(config['DEFAULT']['rng_seed'])
     vectorizer = joblib.load(config['DEFAULT']['vectorizer_filename']) 
@@ -39,7 +40,7 @@ if __name__ == '__main__':
     output_section_code_filename = config['DEFAULT']['output_section_code_filename']
     output_file_codes_filename = config['DEFAULT']['output_file_codes_filename']
     
-    log_filename = '../../log/classifier_classify_target.log'    
+    log_filename = 'log/classifier_classify_target.log'    
     logging.basicConfig(handlers=[logging.FileHandler(log_filename, 'w+', 'utf-8')], level=20)
     logging.getLogger().addHandler(logging.StreamHandler())
     
